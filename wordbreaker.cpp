@@ -43,7 +43,7 @@ bool search(string s){
 }
 
 bool solve(string s){
-    if((int)s.size())
+    if((int)s.size() == 0)
         return true;
     for(int i = 1; i <= (int)s.size(); i++){
         if(search(s.substr(0, i)) and solve(s.substr(i, (int)s.size() - i)))
